@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#176b51"><meta name="description" content="Свободно. — специалисты рядом и запись на удобное время."><link rel="icon" href="/static/favicon.svg" type="image/svg+xml"><title>Свободно. — время для хороших специалистов</title><link rel="stylesheet" href="/static/style.css"><script src="/static/app.js" defer></script></head>
+<body>
+<header class="header"><div class="header-inner"><a href="#catalog" class="logo">свободно<span>●</span></a><nav aria-label="Основная навигация"><a href="#catalog" data-nav="catalog">Найти специалиста</a><a href="#how" data-nav="how">Как это работает</a></nav><div class="header-right"><span class="city">⌖ &nbsp;Киров</span><button id="account" class="button outline">Личный кабинет <span>↗</span></button></div></div></header>
+<main id="app"><div class="loading">Загружаем специалистов…</div></main>
+<footer><a href="#catalog" class="logo">свободно<span>●</span></a><p>Ваши задачи. Хорошие специалисты. Удобное время.</p><span>Демонстрационный проект · 2026<br>Все специалисты и отзывы вымышлены. Фото: Unsplash.</span></footer>
+<button class="chat-launch" id="chat-launch" aria-label="Открыть онлайн-консультацию">✧ <span>Помочь с выбором?</span></button>
+<section id="chat" class="chat hidden" aria-label="Онлайн-консультация"><div class="chat-head"><div><strong>Помощник Свободно.</strong><small>Подберём специалиста вместе</small></div><button id="chat-close" class="icon-button" aria-label="Закрыть чат">×</button></div><div id="chat-messages" class="chat-messages"><div class="bubble">Здравствуйте! Расскажите, что нужно сделать. Например: «протекает кран».<small>Автоматический подбор по ключевым словам</small></div></div><form id="chat-form"><input id="chat-input" aria-label="Ваш вопрос" maxlength="1000" placeholder="Опишите вашу задачу…" required><button class="button" aria-label="Отправить вопрос">↑</button></form></section>
+<dialog id="modal"><button id="modal-close" class="modal-close icon-button" aria-label="Закрыть окно">×</button><div id="modal-content"></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+</body></html>
